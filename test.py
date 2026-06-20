@@ -20,7 +20,7 @@ from metric import ConfuseMatrixMeter
 #     1: (235, 55, 55),      # Road 道路
 #     2: (255, 185, 35),     # Residential 居民地
 #     3: (50, 175, 70),      # Vegetation 植被
-#     4: (170, 120, 85)      # Bare land / Background 其他裸露地表或背景
+#     4: (170, 120, 85)      # Background 背景
 # }
 
 # # UAVid palette 8 classes
