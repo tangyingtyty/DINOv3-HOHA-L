@@ -2,7 +2,7 @@
 
 This repository implements a semantic segmentation framework for remote-sensing imagery. The core idea is to **freeze a Vision Foundation Model (VFM) backbone** and attach a lightweight **HyperGraph Adapter** together with a UPerNet-style decode head, so that general-purpose visual representations can be transferred to remote-sensing segmentation with very few trainable parameters.
 
-This uploaded version provides a complete implementation using the **DINOv3** backbone. By design, the framework also supports DINOv2, SAM / SAM3, MAE, and so on. 
+This uploaded version provides a complete implementation using the **DINOv3** backbone. By design, the framework also supports DINOv2, SAM / SAM3, MAE, and Openclip.
 
 ---
 
