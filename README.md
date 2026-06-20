@@ -1,12 +1,27 @@
-# Exploring Vision Foundation Models with High-Order Hypergraph Adaptation for High-Resolution Remote Sensing Image Semantic Segmentation
+# 🛰️ Exploring Vision Foundation Models with High-Order Hypergraph Adaptation for High-Resolution Remote Sensing Image Semantic Segmentation
 
 This repository implements a semantic segmentation framework for remote-sensing imagery. The core idea is to **freeze a Vision Foundation Model (VFM) backbone** and attach a lightweight **High-Order HyperGraph Adapter (HOHA)** together with a UPerNet-style decode head, so that general-purpose visual representations can be transferred to remote-sensing segmentation with very few trainable parameters.
 
 This uploaded version provides a complete implementation using the **DINOv3** backbone. By design, the framework also supports DINOv2, SAM / SAM3, MAE, and Openclip.
 
+## 🧠 Network Architecture
+
+The overall framework: a frozen VFM backbone with the High-Order HyperGraph Adapter (HOHA) and a UPerNet-style decode head.
+
+<p align="center">
+  <img src="figure/whole_network.png" alt="Overall network architecture" width="90%">
+</p>
+
+The HOHA adapter and its hypergraph construction:
+
+<p align="center">
+  <img src="figure/Hypergraph adapter.png" alt="High-Order HyperGraph Adapter" width="48%">
+  <img src="figure/hypergraph construction.png" alt="Hypergraph construction" width="48%">
+</p>
+
 ---
 
-## Requirements
+## ⚙️ Requirements
 
 Main dependencies (Python ≥ 3.10):
 
@@ -27,9 +42,9 @@ The supported DINOv3 backbones and their weight filenames are listed in the `DIN
 
 ---
 
-## Data Preparation
+## 📂 Data Preparation
 
-### Dataset Acquisition
+### 📥 Dataset Acquisition
 
 - **UAVid**, **LoveDA**, and **Potsdam** are public benchmarks and can be obtained freely from their official sources:
   - UAVid: <https://uavid.nl/>
@@ -37,7 +52,7 @@ The supported DINOv3 backbones and their weight filenames are listed in the `DIN
   - Potsdam (ISPRS 2D Semantic Labeling): <https://www.isprs.org/resources/datasets/benchmarks/UrbanSemLab/2d-sem-label-potsdam.aspx>
 - The **Anhui** and **Hainan** datasets are proprietary production data that are confidential and **cannot be made publicly available**.
 
-### Directory Layout
+### 🗂️ Directory Layout
 
 Datasets are organized under `data/<dataset_name>/` and split into `train` / `test`, each containing `image` / `label` subdirectories. Labels are single-channel grayscale images (pixel value = class index), with matching filenames:
 
@@ -63,7 +78,7 @@ Pass these to training with `--train_dir data/<dataset_name>/train` and `--test_
 
 ---
 
-## Training
+## 🚀 Training
 
 ```bash
 python train.py \
@@ -88,7 +103,7 @@ Common arguments (see `train.py`):
 
 ---
 
-## Evaluation Metrics
+## 📊 Evaluation Metrics
 
 `metric.py` computes the following from the confusion matrix:
 
@@ -99,6 +114,3 @@ Common arguments (see `train.py`):
 
 ---
 
-## Citation
-
-This code is the experimental implementation for the paper (Paper 2). If this repository is helpful to your research, please cite the corresponding paper and acknowledge the following foundational works: DINOv3, UPerNet, `segmentation_models_pytorch`, and `ttach`.
