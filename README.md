@@ -6,7 +6,7 @@ This uploaded version provides a complete implementation using the **DINOv3** ba
 
 ## 🧠 Network Architecture
 
-The overall framework: a frozen VFM backbone with the High-Order HyperGraph Adapter (HOHA) and a UPerNet-style decode head.
+The overall framework:
 
 <p align="center">
   <img src="figure/whole_network.png" alt="Overall network architecture" width="90%">
