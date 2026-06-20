@@ -12,13 +12,6 @@ The overall framework: a frozen VFM backbone with the High-Order HyperGraph Adap
   <img src="figure/whole_network.png" alt="Overall network architecture" width="90%">
 </p>
 
-The HOHA adapter and its hypergraph construction:
-
-<p align="center">
-  <img src="figure/Hypergraph adapter.png" alt="High-Order HyperGraph Adapter" width="48%">
-  <img src="figure/hypergraph construction.png" alt="Hypergraph construction" width="48%">
-</p>
-
 ---
 
 ## ⚙️ Requirements
