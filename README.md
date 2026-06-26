@@ -1,4 +1,4 @@
-# 🛰️ Exploring Vision Foundation Models with High-Order Hypergraph Adaptation for High-Resolution Remote Sensing Image Semantic Segmentation
+# 🛰️ High-order hypergraph adaptation with sub-prototype learning for VFM-based remote sensing semantic segmentation
 
 This repository implements a semantic segmentation framework for remote-sensing imagery. The core idea is to **freeze a Vision Foundation Model (VFM) backbone** and attach a lightweight **High-Order HyperGraph Adapter (HOHA)** together with a UPerNet-style decode head, so that general-purpose visual representations can be transferred to remote-sensing segmentation with very few trainable parameters.
 
