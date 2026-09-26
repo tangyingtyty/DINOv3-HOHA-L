@@ -42,7 +42,7 @@ from metric import ConfuseMatrixMeter
 #            5 : (0, 255, 0),         # Forest
 #            6 : (255, 195, 128)}     # Agricultural
 
-# # Vaihingen/Potsdam palette 6 classes
+# # Potsdam palette 6 classes
 # palette = {0 : (255, 255, 255),     # Impervious surfaces
 #            1 : (0, 0, 255),         # Buildings
 #            2 : (0, 255, 255),       # Low vegetation
