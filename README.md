@@ -43,7 +43,8 @@ The supported DINOv3 backbones and their weight filenames are listed in the `DIN
   - UAVid: <https://uavid.nl/>
   - LoveDA: <https://github.com/Junjue-Wang/LoveDA>
   - Potsdam (ISPRS 2D Semantic Labeling): <https://www.isprs.org/resources/datasets/benchmarks/UrbanSemLab/2d-sem-label-potsdam.aspx>
-- The **Anhui** and **Hainan** datasets are proprietary production data that are confidential and **cannot be made publicly available**.
+- - The **Anhui** and **Hainan** land-cover datasets used in this study are publicly available through Zenodo under the **Creative Commons Attribution 4.0 International (CC BY 4.0)** license:
+  <https://doi.org/10.5281/zenodo.22959635>
 
 ### 🗂️ Directory Layout
 
